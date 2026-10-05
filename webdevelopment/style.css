@@ -1,3 +1,4 @@
+/* ---------- Base styles (existing) ---------- */
 h1 {
   color: #4A4A4A;
   font-size: 40px;
@@ -16,4 +17,154 @@ p {
 li {
   color: #4A4A4A;
   font-size: 18px;
+}
+
+/* ---------- Fonts from design plan ---------- */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ---------- Hero section ---------- */
+.hero {
+  box-sizing: border-box;
+  background-color: #CCEBFA;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.hero-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.hero-photos img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 30px;
+  line-height: 1.3;
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 28px;
+}
+
+/* Call-to-action link styled as a button */
+.hero-button {
+  display: inline-block;
+  background-color: #FCDFE9;
+  color: #4A4A4A;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 28px;
+  border: 2px solid #4A4A4A;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #4A4A4A;
+  color: #FFFFFF;
+}
+
+/* ---------- Quote box ---------- */
+.quote-box {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #FCDFE9;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  padding: 20px 70px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Large decorative quotation marks at the start and end of the quote */
+.quote-box::before,
+.quote-box::after {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.quote-box::before {
+  content: "\201C";
+  top: 8px;
+  left: 20px;
+}
+
+.quote-box::after {
+  content: "\201D";
+  bottom: -28px;
+  right: 20px;
+}
+
+.quote-box blockquote {
+  margin: 0;
+}
+
+.quote-box p {
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
+.quote-box footer {
+  color: #4A4A4A;
+  font-weight: bold;
+}
+
+/* ---------- Phone and tablet ---------- */
+@media (max-width: 700px) {
+  .hero {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .hero-photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .quote-box {
+    margin: 0 15px 30px;
+    padding: 30px 40px;
+  }
+
+  .quote-box::before,
+  .quote-box::after {
+    font-size: 60px;
+  }
+
+  .quote-box::after {
+    bottom: -20px;
+  }
 }
