@@ -2,20 +2,20 @@
 <html lang="en">
 <!--
   Name: Amber Carr
-  Date: 09/20/2026
+  Date: 10/04/2026
   Course: IS_LT-4355
-  Description: Activity 3 - Home Page (index.html)
+  Description: Activity 3 - Hero Section (index.html)
 -->
 
 <head>
-  <!-- Sets character encoding -->
   <meta charset="utf-8">
-
-  <!-- Makes the page responsive on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Title -->
   <title>Amber Carr - Home</title>
+
+  <!-- Fonts from the design plan: Montserrat (headings) and Lato (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Montserrat:wght@700&amp;display=swap">
 
   <!-- styling -->
   <link rel="stylesheet" href="style.css">
@@ -23,7 +23,6 @@
 
 <body>
 
-  <!-- Header section: logo and navigation will go here -->
   <header>
     <!-- Navigation placeholder - links will be added in a later activity -->
     <nav>
@@ -32,42 +31,45 @@
   </header>
 
   <main>
-    <!-- Main heading -->
-    <h1>Welcome: A Quick Look Into Amber</h1>
+    <!-- Hero section: photos, welcome statement, purpose paragraph, and call to action -->
+    <section class="hero">
+      <div class="hero-photos">
+        <img src="images/hero-1.jpg" alt="A tutor and two children reading a book together in a classroom">
+        <img src="images/hero-2.jpg" alt="A tutor showing picture cards to a group of preschool children">
+        <img src="images/hero-3.jpg" alt="A tutor reading a picture book to three young children on the floor">
+        <img src="images/hero-4.jpg" alt="A tutor helping a young boy draw at a classroom table">
+      </div>
 
-    <!-- Welcome statement -->
-    <p>
-      Welcome! I'm Amber Carr, an aspiring IT professional with a background in education,
-      passionate about bringing technology and learning together.
-    </p>
+      <h1>Welcome! I'm Amber Carr, an aspiring IT professional with a background in education, passionate about bringing technology and learning together.</h1>
 
-    <!-- Subheading for the purpose/goals section -->
-    <h2>My Purpose &amp; Goals</h2>
+      <p>
+        I'm currently completing my degree in Information Technology along with four industry
+        certifications, building on years of experience working in schools. I made the shift toward
+        IT because it offers more opportunity and growth, but education has always been my true
+        passion, especially working directly with kids and helping them grow. My goal is to find a
+        role where both of these interests come together, whether that's a school-based technology
+        position, computer lab instruction, or an IT role that still lets me support students and
+        educators. This website is where I'm documenting that journey: my technical training, my
+        experience in schools, and the path that's led me here. Thanks for stopping by, feel free
+        to explore my background and where I'm headed next.
+      </p>
 
-    <!-- Purpose and goals paragraph -->
-    <p>
-      I'm currently completing my degree in Information Technology along with four industry
-      certifications, building on years of experience working in schools. I made the shift toward
-      IT because it offers more opportunity and growth, but education has always been my true
-      passion, especially working directly with kids and helping them grow. My goal is to find a
-      role where both of these interests come together, whether that's a school-based technology
-      position, computer lab instruction, or an IT role that still lets me support students and
-      educators. This website is where I'm documenting that journey: my technical training, my
-      experience in schools, and the path that's led me here. Thanks for stopping by, feel free to
-      explore my background and where I'm headed next.
-    </p>
+      <a class="hero-button" href="about.html">Learn more about me</a>
+    </section>
 
     <!-- Favorite quote -->
-    <blockquote>
-      <p>"You can only become truly accomplished at something you love. Don't make money your
-      goal. Instead pursue the things you love doing and then do them so well that people can't
-      take their eyes off of you."</p>
-      <footer>&mdash; Maya Angelou</footer>
-    </blockquote>
+    <div class="quote-box">
+      <blockquote>
+        <p>You can only become truly accomplished at something you love. Don't make money your
+          goal. Instead pursue the things you love doing and then do them so well that people can't
+          take their eyes off of you.</p>
+        <footer>&mdash; Maya Angelou</footer>
+      </blockquote>
+    </div>
   </main>
 
   <footer>
-    <p>Amber Carr &mdash; 09/20/2026</p>
+    <p>Amber Carr &mdash; 10/04/2026</p>
   </footer>
 
 </body>
