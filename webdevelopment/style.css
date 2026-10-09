@@ -192,3 +192,23 @@ h2 {
   background-color: #4A4A4A;
   color: #FFFFFF;
 }
+
+
+/* ---------- Lists (about page) ---------- */
+ul {
+  list-style-type: square;
+  margin: 10px 0 25px;
+  padding-left: 40px;
+}
+
+li {
+  font-size: 20px;
+  color: #4A4A4A;
+  margin-bottom: 8px;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+li:hover {
+  background-color: #CCEBFA;
+}
