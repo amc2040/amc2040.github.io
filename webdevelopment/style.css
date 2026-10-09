@@ -168,3 +168,27 @@ h2 {
     bottom: -20px;
   }
 }
+
+/* ---------- PDF resume link (box model) ---------- */
+.resume-wrap {
+  text-align: center;
+}
+
+.pdf-link {
+  display: inline-block;
+  padding: 14px 32px;
+  margin: 25px 0;
+  border: 2px solid #4A4A4A;
+  border-radius: 30px;
+  background-color: #FCDFE9;
+  color: #4A4A4A;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pdf-link:hover,
+.pdf-link:focus {
+  background-color: #4A4A4A;
+  color: #FFFFFF;
+}
