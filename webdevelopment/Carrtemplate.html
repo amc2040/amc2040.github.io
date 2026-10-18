@@ -4,47 +4,51 @@
   Name: Amber Carr
   Date: 09/10/2026
   Course: IS_LT-4355
-  Description: Activity 4 - Navigation (Carrtemplate.html)
+  File: Carrtemplate.html
+  Description: Activity 5 - Template with navigation (Carrtemplate.html)
 -->
 
 <head>
-  <!-- Sets character encoding -->
   <meta charset="utf-8">
-
-  <!-- Makes the page responsive on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Title -->
   <title>Boilerplate Template</title>
 
-  <!-- Montserrat font used by the navigation -->
+  <!-- Fonts: Montserrat (headings, navigation) and Lato (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Montserrat:wght@700&amp;display=swap">
 
-  <!--styling -->
+  <!-- styling -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
 
-  <!-- Header section: logo and navigation -->
+  <!-- ===== NAVIGATION: logo and menu coded here (styled in nav.css) ===== -->
   <header>
-   <a href="index.html"><img src="images/logo.png" alt="Amber Carr Site Logo"></a>
+    <a href="index.html"><img src="logo.png" alt="Amber Carr Site Logo"></a>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="career.html">Career</a></li>
+        <li class="has-dropdown"><a href="career.html">Career</a>
+          <!-- Tier 2: drop-down menu for the Career link -->
+          <ul class="dropdown">
+            <li><a href="career.html#jumpstart">Jumpstart Corps Member</a></li>
+            <li><a href="career.html#mizzou-pals">Mizzou Pals Tutor</a></li>
+            <li><a href="career.html#bask">Before and After School Care</a></li>
+            <li><a href="career.html#vbs">Vacation Bible School</a></li>
+          </ul>
+        </li>
         <li><a href="reflection.html">Reflection</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- ===== MAIN CONTENT ===== -->
   <main>
-    <!-- Sample heading -->
     <h1>Hello, world!</h1>
   </main>
 
