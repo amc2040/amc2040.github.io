@@ -1,4 +1,4 @@
-/* ---------- Header and navigation (Flexbox) ---------- */
+/* ===== NAVIGATION STYLES (Flexbox): header, logo, menu links ===== */
 header {
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@ header {
 
 header img {
   display: block;
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 
@@ -48,7 +48,43 @@ nav a[aria-current="page"] {
   border-radius: 0;
 }
 
-/* ---------- Phone and tablet ---------- */
+/* ===== DROP-DOWN MENU STYLES: 2-tier menu under the Career link ===== */
+nav li {
+  position: relative;
+}
+
+.has-dropdown > a::after {
+  content: " \25BE";
+}
+
+nav .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 4px;
+  min-width: 260px;
+  padding: 8px;
+  background-color: #FFFFFF;
+  border: 2px solid #4A4A4A;
+  border-radius: 12px;
+}
+
+.has-dropdown:hover > .dropdown,
+.has-dropdown:focus-within > .dropdown {
+  display: flex;
+}
+
+.dropdown a {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* ===== PHONE AND TABLET ===== */
 @media (max-width: 700px) {
   header {
     flex-direction: column;
@@ -63,5 +99,15 @@ nav a[aria-current="page"] {
   nav a {
     font-size: 15px;
     padding: 6px 10px;
+  }
+
+  nav .dropdown,
+  .has-dropdown:hover > .dropdown,
+  .has-dropdown:focus-within > .dropdown {
+    display: none;
+  }
+
+  .has-dropdown > a::after {
+    content: "";
   }
 }
