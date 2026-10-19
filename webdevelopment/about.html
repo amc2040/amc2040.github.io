@@ -4,7 +4,8 @@
   Name: Amber Carr
   Date: 09/20/2026
   Course: IS_LT-4355
-  Description: Activity 3 - About Page (about.html)
+  File: about.html
+  Description: Activity 5 - About Page with navigation (about.html)
 -->
 
 <head>
@@ -17,20 +18,41 @@
   <!-- Title -->
   <title>Amber Carr - About</title>
 
+  <!-- Fonts: Montserrat (headings, navigation) and Lato (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Montserrat:wght@700&amp;display=swap">
+
   <!-- styling -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
 
-  <!-- Header section: logo and navigation will go here -->
+  <!-- ===== NAVIGATION: logo and menu coded here (styled in nav.css) ===== -->
   <header>
-    <!-- Navigation placeholder - links will be added in a later activity -->
+    <a href="index.html"><img src="images/logo.png" alt="Amber Carr Site Logo"></a>
     <nav>
-      <p>Home | About | Career | Reflection | Contact</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li class="has-dropdown"><a href="career.html">Career</a>
+          <!-- Tier 2: drop-down menu for the Career link -->
+          <ul class="dropdown">
+            <li><a href="career.html#jumpstart">Jumpstart Corps Member</a></li>
+            <li><a href="career.html#mizzou-pals">Mizzou Pals Tutor</a></li>
+            <li><a href="career.html#bask">Before and After School Care</a></li>
+            <li><a href="career.html#vbs">Vacation Bible School</a></li>
+          </ul>
+        </li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- ===== MAIN CONTENT: about me, education, and job overview coded here ===== -->
   <main>
     <!-- Main heading -->
     <h1>About Me</h1>
