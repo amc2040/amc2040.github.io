@@ -250,3 +250,49 @@ h2 {
     padding: 20px;
   }
 }
+/* ===== ABOUT PAGE: IMAGE STYLES (headshot) ===== */
+.headshot {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 6px;
+  border: 4px solid #CCEBFA;
+  border-radius: 16px;
+  background-color: #FCDFE9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.headshot:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== ABOUT PAGE: VIDEO STYLES (intro video) ===== */
+.intro-video {
+  max-width: 640px;
+  margin: 30px auto;
+}
+
+.intro-video video {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 6px;
+  border: 4px solid #CCEBFA;
+  border-radius: 16px;
+  background-color: #EDE1F8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.intro-video figcaption {
+  margin-top: 10px;
+  color: #4A4A4A;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
