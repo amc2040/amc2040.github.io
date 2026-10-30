@@ -250,6 +250,7 @@ h2 {
     padding: 20px;
   }
 }
+
 /* ===== ABOUT PAGE: IMAGE STYLES (headshot) ===== */
 .headshot {
   display: block;
@@ -295,4 +296,58 @@ h2 {
   font-size: 16px;
   font-style: italic;
   text-align: center;
+}
+
+/* ===== FOOTER STYLES: background image, contact info, and icons ===== */
+body > footer {
+  padding: 25px 30px;
+  background-color: #EDE1F8;
+  background-image: url("images/footer-bg.png");
+  background-repeat: repeat;
+  text-align: center;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  margin: 0 0 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-contact a {
+  color: #4A4A4A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus {
+  text-decoration: underline;
+}
+
+body > footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .footer-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
