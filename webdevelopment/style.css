@@ -351,3 +351,84 @@ body > footer p {
     gap: 10px;
   }
 }
+
+/* ===== PRINT STYLES (about.html only): prints name, bio, education, and contact info ===== */
+@media print {
+  /* 1 inch margins on all sides of the printed page */
+  @page {
+    margin: 1in;
+  }
+
+  /* Hide everything that should not print */
+  .about-page header,
+  .about-page .headshot,
+  .about-page .jobs,
+  .about-page .resume-wrap,
+  .about-page .intro-video,
+  .about-page footer img,
+  .about-page footer > p {
+    display: none;
+  }
+
+  /* Black serif text, no colors or backgrounds */
+  .about-page {
+    margin: 0;
+    background: none;
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .about-page h1,
+  .about-page h2,
+  .about-page p,
+  .about-page li,
+  .about-page a {
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  /* Smaller sizes and tighter spacing so everything fits on one page */
+  .about-page h1 {
+    margin: 0 0 12pt;
+    font-size: 24pt;
+  }
+
+  .about-page h2 {
+    margin: 14pt 0 6pt;
+    font-size: 16pt;
+  }
+
+  .about-page p,
+  .about-page li {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .about-page p {
+    margin: 0 0 8pt;
+  }
+
+  /* Footer: contact information only, plain text */
+  .about-page > footer {
+    margin-top: 16pt;
+    padding: 10pt 0 0;
+    border-top: 1pt solid #000000;
+    background: none;
+    text-align: left;
+  }
+
+  .about-page .footer-contact {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-page .footer-contact li {
+    display: block;
+  }
+
+  .about-page .footer-contact a {
+    font-weight: normal;
+    text-decoration: none;
+  }
+}
