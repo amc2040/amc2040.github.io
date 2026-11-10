@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Amber Carr
+  Date: 11/10/2026
+  Course: IS_LT-4355
+  File: contact.html
+  Description: Activity 6 - Contact Page with form (contact.html)
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amber Carr - Contact</title>
+
+  <!-- Favicon: icon shown in the browser tab -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Fonts: Montserrat (headings, navigation) and Lato (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Montserrat:wght@700&amp;display=swap">
+
+  <!-- styling -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION: logo and menu coded here (styled in nav.css) ===== -->
+  <header>
+    <a href="index.html"><img src="images/logo.png" alt="Amber Carr Site Logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown"><a href="career.html">Career</a>
+          <!-- Tier 2: drop-down menu for the Career link -->
+          <ul class="dropdown">
+            <li><a href="career.html#jumpstart">Jumpstart Corps Member</a></li>
+            <li><a href="career.html#mizzou-pals">Mizzou Pals Tutor</a></li>
+            <li><a href="career.html#bask">Before and After School Care</a></li>
+            <li><a href="career.html#vbs">Vacation Bible School</a></li>
+          </ul>
+        </li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT: contact form coded here (form styles are in style.css) ===== -->
+  <main>
+    <div class="contact-heading">
+      <h1>Get in Touch</h1>
+      <p>Interested in working together, or have a question about my background? Send me a message and I'll get back to you.</p>
+    </div>
+
+    <form class="contact-form" action="#" method="get">
+      <!-- Title drop-down menu -->
+      <div class="form-group">
+        <label for="title">Title</label>
+        <select id="title" name="title" required>
+          <option value="" disabled selected>Select a title</option>
+          <option value="mr">Mr.</option>
+          <option value="ms">Ms.</option>
+          <option value="mrs">Mrs.</option>
+          <option value="mx">Mx.</option>
+          <option value="dr">Dr.</option>
+        </select>
+      </div>
+
+      <!-- Full name -->
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" autocomplete="name" required>
+      </div>
+
+      <!-- Email address (type="email" checks for a valid email) -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="email" required>
+      </div>
+
+      <!-- Message -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here" required></textarea>
+      </div>
+
+      <!-- Select button menu (radio buttons) -->
+      <fieldset class="form-group">
+        <legend>I'm contacting you about:</legend>
+        <label class="radio-option" for="topic-job">
+          <input type="radio" id="topic-job" name="topic" value="job" required> Job or internship opportunity
+        </label>
+        <label class="radio-option" for="topic-background">
+          <input type="radio" id="topic-background" name="topic" value="background" required> Question about my background
+        </label>
+        <label class="radio-option" for="topic-feedback">
+          <input type="radio" id="topic-feedback" name="topic" value="feedback" required> Feedback on this website
+        </label>
+      </fieldset>
+
+      <!-- Submit button -->
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <ul class="footer-contact">
+      <li><img src="images/phone.png" alt="Phone icon"> <a href="tel:123123123">123123123</a></li>
+      <li><img src="images/email.png" alt="Email icon"> <a href="mailto:ac@placeholder">ac@placeholder</a></li>
+    </ul>
+    <p>Amber Carr &mdash; 11/10/2026</p>
+  </footer>
+
+</body>
+
+</html>
