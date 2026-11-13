@@ -84,23 +84,67 @@ nav .dropdown {
   white-space: nowrap;
 }
 
-/* ===== PHONE AND TABLET ===== */
+/* ===== MOBILE NAVIGATION: hamburger icon (hidden on large screens) ===== */
+.menu-toggle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.menu-icon {
+  display: none;
+  padding: 4px 12px;
+  border: 2px solid #4A4A4A;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #4A4A4A;
+  font-size: 32px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.menu-toggle:focus-visible + .menu-icon {
+  outline: 3px solid #FCDFE9;
+  background-color: #FCDFE9;
+}
+
+/* ===== MOBILE NAVIGATION: media query for phones (hide menu, show hamburger, hide dropdown) ===== */
 @media (max-width: 700px) {
   header {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 12px 15px;
   }
 
+  /* Show the hamburger icon */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hide the full navigation menu until the hamburger icon is tapped */
+  header nav {
+    display: none;
+    flex-basis: 100%;
+  }
+
+  .menu-toggle:checked ~ nav {
+    display: block;
+  }
+
   nav ul {
-    justify-content: center;
-    gap: 4px 8px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
   }
 
   nav a {
-    font-size: 15px;
-    padding: 6px 10px;
+    font-size: 16px;
+    padding: 10px 14px;
+    text-align: center;
   }
 
+  /* Drop-down menu stays hidden in mobile view */
   nav .dropdown,
   .has-dropdown:hover > .dropdown,
   .has-dropdown:focus-within > .dropdown {
