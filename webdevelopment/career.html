@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Amber Carr
+  Date: 11/16/2026
+  Course: IS_LT-4355
+  File: career.html
+  Description: Activity 8 - Career page with responsive Grid layout and anchor links (career.html)
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amber Carr - Career</title>
+
+  <!-- Favicon: icon shown in the browser tab -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Fonts: Montserrat (headings, navigation) and Lato (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Montserrat:wght@700&amp;display=swap">
+
+  <!-- styling -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+</head>
+
+<body class="career-page">
+
+  <!-- ===== NAVIGATION: logo and menu coded here (styled in nav.css) ===== -->
+  <header>
+    <a href="index.html"><img src="images/logo.png" alt="Amber Carr Site Logo"></a>
+    <!-- Hamburger icon (shows on phones only): checkbox + label open the menu with CSS only -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open or close the navigation menu">
+    <label for="menu-toggle" class="menu-icon" title="Menu">&#9776;</label>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown"><a href="career.html" aria-current="page">Career</a>
+          <!-- Tier 2: drop-down menu with anchor links to the sections on career.html -->
+          <ul class="dropdown">
+            <li><a href="career.html#jumpstart">Jumpstart Corps Member</a></li>
+            <li><a href="career.html#mizzou-pals">Mizzou Pals Tutor</a></li>
+            <li><a href="career.html#bask">Before and After School Care</a></li>
+            <li><a href="career.html#vbs">Vacation Bible School</a></li>
+          </ul>
+        </li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT: four career cards in a responsive grid (styled in style.css) ===== -->
+  <main>
+    <div class="career-intro">
+      <h1>Career Experience</h1>
+    </div>
+
+    <section class="career-card" id="jumpstart">
+      <details open>
+        <summary>
+          <h2>Jumpstart Corps Member</h2>
+          <span class="career-meta">Jumpstart, Columbia, MO | August 2023 &ndash; May 2025</span>
+        </summary>
+        <div class="card-body">
+          <div class="card-text">
+            <p><strong>Description:</strong> As a Jumpstart Corps Member, I completed 300 hours of professional development and training in leadership, family communication, language and literacy development, and early childhood theory and practice.</p>
+            <p class="career-label"><strong>Accomplishments:</strong></p>
+            <ul>
+            <li>Applied evidence-based practices in real classroom settings</li>
+            <li>Completed 300+ hours of specialized training in early childhood development</li>
+            </ul>
+            <p><strong>Reflection:</strong> This role gave me my first real foundation in understanding how children learn and develop. Working with early childhood theory taught me patience and how important clear communication is, especially with people who don&rsquo;t have the same background or knowledge as you. That&rsquo;s actually a big part of why I think I&rsquo;ll do well in IT, since explaining tech stuff to non-technical people takes the same kind of patience.</p>
+          </div>
+          <figure class="card-artifact">
+            <img src="images/jumpstart-logo.png" alt="Jumpstart logo with the tagline Children first">
+            <figcaption>Credit: logo owned by Jumpstart.</figcaption>
+          </figure>
+        </div>
+      </details>
+    </section>
+
+    <section class="career-card" id="mizzou-pals">
+      <details open>
+        <summary>
+          <h2>Mizzou Pals Tutor</h2>
+          <span class="career-meta">Mizzou Pals, Columbia, MO | August 2023 &ndash; Present</span>
+        </summary>
+        <div class="card-body">
+          <div class="card-text">
+            <p><strong>Description:</strong> I provide five hours of weekly one-on-one tutoring to preschool students, implementing an early childhood curriculum to promote social skills and linguistic proficiency.</p>
+            <p class="career-label"><strong>Accomplishments:</strong></p>
+            <ul>
+            <li>Delivered consistent, individualized tutoring support over multiple semesters</li>
+            <li>Collaborated with teachers and parents to design engaging lesson plans and track student progress</li>
+            </ul>
+            <p><strong>Reflection:</strong> Tutoring one-on-one taught me how to adapt my approach based on the individual in front of me, since no two students learn the same way. That mindset has stuck with me as I move toward IT, where troubleshooting and support work often require the same kind of patience and adaptability. This role also strengthened my collaboration skills, working alongside teachers and parents toward a shared goal.</p>
+          </div>
+          <figure class="card-artifact">
+            <img src="images/mizzou-pals-logo.png" alt="Mizzou Pals Preschool Active Learning Service logo">
+            <figcaption>Credit: logo owned by Mizzou Pals.</figcaption>
+          </figure>
+        </div>
+      </details>
+    </section>
+
+    <section class="career-card" id="bask">
+      <details open>
+        <summary>
+          <h2>Before and After School Care Assistant</h2>
+          <span class="career-meta">BASK, Ladue, MO | August 2022 &ndash; May 2023</span>
+        </summary>
+        <div class="card-body">
+          <div class="card-text">
+            <p><strong>Description:</strong> I supervised kindergarten through fourth grade students in an after-school program, facilitating structured activities like outdoor games and board games to encourage physical activity and cognitive development.</p>
+            <p class="career-label"><strong>Accomplishments:</strong></p>
+            <ul>
+            <li>Maintained a safe, supportive environment for a wide age range of students</li>
+            <li>Built strong rapport with students through consistent, meaningful engagement</li>
+            </ul>
+            <p><strong>Reflection:</strong> This job taught me how to manage a group dynamic and keep multiple students engaged at once, which is a skill I don&rsquo;t think I fully appreciated until I started thinking about IT roles that involve training or supporting groups of people. It also reinforced how much I enjoy working with kids, which is part of why I&rsquo;m drawn to school-based technology positions rather than leaving education behind entirely.</p>
+          </div>
+          <figure class="card-artifact">
+            <img src="images/bask-logo.png" alt="Ladue Schools BASK Before and After School Kare logo">
+            <figcaption>Credit: logo owned by Ladue Schools.</figcaption>
+          </figure>
+        </div>
+      </details>
+    </section>
+
+    <section class="career-card" id="vbs">
+      <details open>
+        <summary>
+          <h2>Vacation Bible School Volunteer</h2>
+          <span class="career-meta">VBS, Ladue, MO | June 2015 &ndash; Present</span>
+        </summary>
+        <div class="card-body">
+          <div class="card-text">
+            <p><strong>Description:</strong> I direct groups of 5-7 children through daily station activities during VBS, coordinating safe transportation between stations and maintaining a smooth daily routine.</p>
+            <p class="career-label"><strong>Accomplishments:</strong></p>
+            <ul>
+            <li>Volunteered consistently for nearly a decade, showing long-term commitment</li>
+            <li>Served as a positive role model, reinforcing respectful behavior in children</li>
+            </ul>
+            <p><strong>Reflection:</strong> Volunteering with VBS for so many years has shown me how much I value consistency and community, even outside of paid work. Leading groups of children through structured activities year after year has strengthened my organizational skills and reinforced that mentorship and guidance are things I want to carry into whatever career path I take, technical or otherwise.</p>
+          </div>
+          <figure class="card-artifact">
+            <img src="images/salem-logo.png" alt="Salem United Methodist Church logo">
+            <figcaption>Credit: logo owned by Salem United Methodist Church.</figcaption>
+          </figure>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="footer-contact">
+      <li><img src="images/phone.png" alt="Phone icon"> <a href="tel:123123123">123123123</a></li>
+      <li><img src="images/email.png" alt="Email icon"> <a href="mailto:ac@placeholder">ac@placeholder</a></li>
+    </ul>
+    <p>Amber Carr &mdash; 11/16/2026</p>
+  </footer>
+
+  <!-- Phone view: cards collapse (first card open) and expand when tapped. Desktop and tablet: all cards stay open. -->
+  <script>
+    (function () {
+      var cards = document.querySelectorAll(".career-card details");
+      var phone = window.matchMedia("(max-width: 600px)");
+
+      function setLayout() {
+        var target = document.getElementById(location.hash.slice(1));
+        cards.forEach(function (card, i) {
+          var wanted = phone.matches ? i === 0 : true;
+          if (target && target.contains(card)) { wanted = true; }
+          card.open = wanted;
+        });
+      }
+
+      cards.forEach(function (card) {
+        card.querySelector("summary").addEventListener("click", function (event) {
+          if (!phone.matches) { event.preventDefault(); }
+        });
+      });
+
+      setLayout();
+      phone.addEventListener("change", setLayout);
+      window.addEventListener("hashchange", setLayout);
+    })();
+  </script>
+
+</body>
+
+</html>
