@@ -732,10 +732,6 @@ body > footer p {
   font-weight: bold;
 }
 
-.career-meta::before {
-  content: "\1F4C5\00A0";
-}
-
 /* Card text */
 .card-body {
   display: flex;
