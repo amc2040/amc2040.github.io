@@ -860,3 +860,70 @@ body > footer p {
     max-height: 90px;
   }
 }
+/* ===== TABLE: career summary (full width under the cards) ===== */
+.career-table {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.career-table table {
+  width: 100%;
+  border: 3px solid #4A4A4A;
+  border-collapse: collapse;
+  color: #4A4A4A;
+  font-size: 16px;
+}
+
+.career-table caption {
+  padding: 0 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.career-table th,
+.career-table td {
+  padding: 12px 14px;
+  border: 1px solid #4A4A4A;
+  text-align: left;
+  vertical-align: top;
+}
+
+.career-table thead th {
+  background-color: #EDE1F8;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Structural pseudo-classes: rows 1 and 3 share a color, rows 2 and 4 share another */
+.career-table tbody tr:nth-child(odd) {
+  background-color: #FCDFE9;
+}
+
+.career-table tbody tr:nth-child(even) {
+  background-color: #CCEBFA;
+}
+
+.career-table a {
+  color: #4A4A4A;
+}
+
+/* Phone: smaller text and padding so the whole table fits */
+@media (max-width: 600px) {
+  .career-table table {
+    font-size: 14px;
+  }
+
+  .career-table caption {
+    font-size: 17px;
+  }
+
+  .career-table th,
+  .career-table td {
+    padding: 8px;
+  }
+}
